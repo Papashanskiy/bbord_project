@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Список объявлений</title>
+    </head>
+    <body>
+        <h1>Объявления &middot;</h1>
+        {% for post in object_list %}
+            <p>
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.content }}</p>
+                <p>{{ post.price }}</p>
+                <p>{{ post.pub_date }}</p>
+            </p>
+        {% endfor %}
+
+    </body>
+</html>
